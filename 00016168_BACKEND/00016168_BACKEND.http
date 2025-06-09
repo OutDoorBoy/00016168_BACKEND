@@ -1,0 +1,6 @@
+@_00016168_BACKEND_HostAddress = http://localhost:5165
+
+GET {{_00016168_BACKEND_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
