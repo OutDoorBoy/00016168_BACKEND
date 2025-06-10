@@ -52,7 +52,7 @@ namespace _00016168_BACKEND.Controllers
             var reviews = await _reviewRepository.GetByMovieIdAsync(movieId);
             var options = new JsonSerializerOptions
             {
-                ReferenceHandler = ReferenceHandler.Preserve,
+                ReferenceHandler = ReferenceHandler.IgnoreCycles,
                 WriteIndented = true
             };
 
