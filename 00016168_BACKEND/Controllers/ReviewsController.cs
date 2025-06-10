@@ -50,8 +50,13 @@ namespace _00016168_BACKEND.Controllers
         public async Task<ActionResult<IEnumerable<Review>>> GetReviewsByMovie(int movieId)
         {
             var reviews = await _reviewRepository.GetByMovieIdAsync(movieId);
+            var options = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve,
+                WriteIndented = true
+            };
 
-            return Ok(reviews);
+            return new JsonResult(reviews, options);
         }
 
         [HttpPost]
