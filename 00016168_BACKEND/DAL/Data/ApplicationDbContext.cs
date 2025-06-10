@@ -10,7 +10,7 @@ namespace _00016168_BACKEND.DAL.Data
             : base(options)
         { }
 
-        public DbSet<Movie> movies { get; set; }
-        public DbSet<Review> reviews { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Review> Reviews { get; set; }
     }
 }
