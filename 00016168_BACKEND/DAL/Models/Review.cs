@@ -5,6 +5,7 @@ namespace _00016168_BACKEND.DAL.Models
 {
     public class Review
     {
+        //00016168    
         public int Id { get; set; }
 
         [Required]

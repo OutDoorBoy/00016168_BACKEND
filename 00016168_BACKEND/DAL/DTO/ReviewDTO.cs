@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace _00016168_BACKEND.DAL.DTO
 {
+    //00016168    
+
     public class ReviewDTO
     {
         [Required]
