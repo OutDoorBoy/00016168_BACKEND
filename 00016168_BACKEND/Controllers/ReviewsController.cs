@@ -39,7 +39,7 @@ namespace _00016168_BACKEND.Controllers
                 return NotFound();
             var options = new JsonSerializerOptions
             {
-                ReferenceHandler = ReferenceHandler.Preserve,
+                ReferenceHandler = ReferenceHandler.IgnoreCycles,
                 WriteIndented = true
             };
 
